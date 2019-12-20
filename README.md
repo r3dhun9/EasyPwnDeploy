@@ -17,14 +17,12 @@
 > First, change your binary and flag into ctf-pwn directory
 
 ```bash=
-git clone https://github.com/r3dhun9/EasyPwnDeploy.git
-cd EasyPwnDeploy/ctf-pwn
+git clone https://github.com/r3dhun9/EasyPwnDeploy.git ~
+cd ~/EasyPwnDeploy/ctf-pwn
 vim flag                     # modify your flag
 vim run.sh                   # modify ${this_is_your_binary}
 rm this_is_your_binary       # replace the binary into yours
-cd ../                       # back to the directory
 ```
-
 
 > Second, build the challenge's image from Dockerfile
 
@@ -35,7 +33,7 @@ sudo docker build -t ${your_image_name} . --no-cache
 > And lastly, run this command
 
 ```bash=
-sudo docker run --name ${your_containers_name} -d -p ${your_port}:9999 -it ${your_images_name} /bin/bash -c "su - pwn -c 'ncat -ve /home/ctf-pwn/run.sh -klp 9999'"
+sudo docker run --name ${your_containers_name} -d -p ${your_port}:9999 -it ${your_images_name} /bin/bash -c "/usr/sbin/xinetd -dontfork"
 ```
 
 ---

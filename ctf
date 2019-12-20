@@ -1,0 +1,15 @@
+service ctf 
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/ctf-pwn/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = pwn
+        port = 9999
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}
