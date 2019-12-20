@@ -18,7 +18,7 @@
 
 ```bash=
 git clone https://github.com/r3dhun9/EasyPwnDeploy.git
-cd ctf-pwn
+cd EasyPwnDeploy/ctf-pwn
 vim flag                     # modify your flag
 vim run.sh                   # modify ${this_is_your_binary}
 rm this_is_your_binary       # replace the binary into yours
