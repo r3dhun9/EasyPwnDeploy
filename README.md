@@ -22,6 +22,7 @@ cd EasyPwnDeploy/ctf-pwn
 vim flag                     # modify your flag
 vim run.sh                   # modify ${this_is_your_binary}
 rm this_is_your_binary       # replace the binary into yours
+cd ../                       # back to the directory
 ```
 
 
