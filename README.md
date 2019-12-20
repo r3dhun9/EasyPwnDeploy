@@ -27,6 +27,7 @@ rm this_is_your_binary       # replace the binary into yours
 > Second, build the challenge's image from Dockerfile
 
 ```dockerfile=
+cd ~/EasyPwnDeploy
 sudo docker build -t ${your_image_name} . --no-cache
 ```
 
