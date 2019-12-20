@@ -9,7 +9,7 @@
 # Features
 * You can deploy pwn challenges rapidly
 
-* You may modify the directory's name to whatever you want
+* You may modify the directory's name to whatever you want, but you should modify the Dockerfile as well as ctf config
 
 ---
 
