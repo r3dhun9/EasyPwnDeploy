@@ -17,7 +17,7 @@
 > First, change your binary and flag into ctf-pwn directory
 
 ```bash=
-git clone https://github.com/r3dhun9/EasyPwnDeploy.git ~
+git clone https://github.com/r3dhun9/EasyPwnDeploy.git ~/EasyPwnDeploy
 cd ~/EasyPwnDeploy/ctf-pwn
 vim flag                     # modify your flag
 vim run.sh                   # modify ${this_is_your_binary}
